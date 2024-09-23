@@ -21,7 +21,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/signup', formData); // Adjust the URL if necessary
+      const response = await axios.post('https://dating-app-backend-45yu.onrender.com/api/auth/signup', formData); // Adjust the URL if necessary
       alert('Signup successful');
       navigate('/login');
     } catch (error) {
