@@ -13,7 +13,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+      const response = await axios.post('https://dating-app-backend-45yu.onrender.com/api/auth/login', { email, password });
       console.log('Login response:', response.data);
 
       // Save the token and user details in localStorage
