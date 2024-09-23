@@ -21,7 +21,7 @@ function Profile() {
           return;
         }
 
-        const response = await axios.get(`http://localhost:5000/api/profile/${id}`, {
+        const response = await axios.get(`https://dating-app-backend-45yu.onrender.com/api/profile/${id}`, {
           headers: { Authorization: `Bearer ${token}` }, // Pass token in header
         });
 
