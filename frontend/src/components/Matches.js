@@ -13,7 +13,7 @@ function Matches() {
     const fetchMatches = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/matches', {
+        const response = await axios.get('https://dating-app-backend-45yu.onrender.com/api/matches', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setMatches(response.data);
