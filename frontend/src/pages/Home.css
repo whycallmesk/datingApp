@@ -1,0 +1,158 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;  /* Space between logo and right-side links */
+    align-items: center;
+    background-color: #333;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    color: white;
+  }
+  
+  /* Logo Section */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px; /* Adjust size of the logo */
+    height: 50px;
+    margin-right: 10px; /* Spacing between logo and text */
+  }
+  
+  .logo-name {
+    font-size: 28px; /* Make the name bold and big */
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Navbar Items - aligned to the right */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;  /* Reduce the gap between items */
+    margin-left: auto;
+  }
+  
+  /* Navbar Items */
+  .navbar-item {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .navbar-item:hover {
+    color: #ff4081;
+  }
+  
+  /* Navbar Link Styling */
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-link:hover {
+    color: #ff4081;
+  }
+  
+  /* About MyDate Blog Section */
+  .about-mydate-blog {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    margin-top: 100px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    text-align: left;
+  }
+  
+  .about-mydate-blog h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .about-mydate-blog p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Main Content Styles */
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .home-content h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Styling */
+  .home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .home-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-content h1 {
+      font-size: 36px;
+    }
+  
+    .about-mydate-blog {
+      width: 80%;
+    }
+  
+    .logo-name {
+      font-size: 24px; /* Make logo text smaller for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-content h1 {
+      font-size: 28px;
+    }
+  
+    .about-mydate-blog {
+      width: 90%;
+    }
+  
+    .logo-name {
+      font-size: 20px;
+    }
+  }
+  

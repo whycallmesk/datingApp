@@ -1,0 +1,129 @@
+/* General styles for the matches container */
+.matches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the heading */
+.matches h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the list of matches */
+.matches ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 450px;
+}
+
+.matches li {
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1.1rem;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.matches li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Link styles */
+.matches a {
+    text-decoration: none;
+    color: #6149e6;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.matches a:hover {
+    color: #40c4b9;
+    text-decoration: underline;
+}
+
+/* Loading and error message styles */
+.matches div {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Navigation icons */
+.matches nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 220px;
+    margin-top: 30px;
+}
+
+.matches nav img {
+    width: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.matches nav img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design for medium screens */
+@media (max-width: 768px) {
+    .matches {
+        padding: 15px;
+    }
+
+    .matches h2 {
+        font-size: 1.8rem;
+    }
+
+    .matches li {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .matches nav img {
+        width: 40px;
+    }
+}
+
+/* Responsive Design for small screens */
+@media (max-width: 480px) {
+    .matches h2 {
+        font-size: 1.6rem;
+    }
+
+    .matches ul {
+        max-width: 100%;
+    }
+
+    .matches li {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .matches nav img {
+        width: 35px;
+    }
+}
