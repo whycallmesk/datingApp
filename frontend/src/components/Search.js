@@ -12,7 +12,7 @@ function Search() {
   const handleSearch = async () => {
     try {
       const token = localStorage.getItem('token'); // Get token from local storage
-      const response = await axios.get('http://localhost:5000/api/search', {
+      const response = await axios.get('https://dating-app-backend-45yu.onrender.com/api/search', {
         params: { name: searchTerm }, // Send search term as query parameter
         headers: { Authorization: `Bearer ${token}` }, // Send token in the header
       });
