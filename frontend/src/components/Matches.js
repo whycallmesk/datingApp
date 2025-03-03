@@ -42,13 +42,13 @@ function Matches() {
       <ul>
         {matches.map((user) => (
           <li key={user._id}>
-            {/* Link each name to the user's profile */}
+
             <Link to={`/profile/${user._id}`}>{user.name}</Link>
           </li>
         ))}
       </ul>
 
-      {/* Icon navigation for Matches, Search, and Profile */}
+
       <nav style={{ marginTop: '20px' }}>
         <Link to="/matches">
           <img src="/icons/matches-icon1.jpg" alt="Matches" style={{ width: '30px' }} />
