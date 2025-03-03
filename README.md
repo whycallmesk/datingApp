@@ -45,9 +45,9 @@ The application is built with cutting-edge technologies to ensure performance, s
 
 ## 📂 Project Structure  
 DatingApp/
-│── backend/         # Server-side code
-│── frontend/        # Client-side code
-│── README.md        # Documentation
-│── package.json     # Project dependencies
-│── .gitignore       # Ignored files
+│── backend/         
+│── frontend/        
+│── README.md        
+│── package.json     
+│── .gitignore      
 
